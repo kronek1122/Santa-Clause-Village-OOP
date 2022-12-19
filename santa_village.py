@@ -8,6 +8,10 @@ class village_building():
     def __str__(self):
         return f"{self.name} is Santa Clause Village building and intended for {self.purpose}."
 
+    def open_hours(self, open, close):
+        self.open = open
+        self.close = close
+
 
 class tentant():
     
@@ -17,7 +21,11 @@ class tentant():
         self.age = age
 
     def __str__(self):
-        return f"This is {self.name} a {self.age} years old {self.type}"
+        return f"This is {self.name} a {self.age} years old and {self.height} cm height"
+
+
+    def attrribute(self, ability):
+        self.ability = ability
 
 class Elf(tentant):
     
